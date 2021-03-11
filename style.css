@@ -16,9 +16,11 @@
 	text-align: center;
 }
 #footer {
+  position:absolute;
+  bottom:0;
   clear: both;
   padding: 10px;
-	margin-left: 30%;
+  margin-left: 30%;
   margin-right: 30%;
 }
 .footer p {
