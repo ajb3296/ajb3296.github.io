@@ -1,33 +1,32 @@
 #contain {
   margin: 10px auto;
-	margin-top: 150px;
+  margin-top: 150px;
   width: auto;
   padding: 20px;
 }
 #title {
   padding: 20px;
   margin-top: 15px;
-	text-align: center;
+  text-align: center;
 }
 #text {
   padding: 10px;
-	margin-top: 2.5%;
-	margin-bottom: 10px;
-	text-align: center;
+  margin-top: 2.5%;
+  margin-bottom: 10px;
+  text-align: center;
 }
 #footer {
-  position:absolute;
-  bottom:0;
   clear: both;
   padding: 10px;
   margin-left: 30%;
   margin-right: 30%;
+  height: 100px;
 }
 .footer p {
-	text-align: center;	
-	padding: 75px;
-	font-size:17px;
-	color: #000;
+  text-align: center;	
+  padding: 10px;
+  font-size:17px;
+  color: #000;
 }
 
 @media (max-width : 383px ){
@@ -61,26 +60,26 @@ button:hover {
 }
 
 #title {
-	animation-duration: 1s; animation-name: slidein;
+  animation-duration: 1s; animation-name: slidein;
 }
 
 @keyframes slidein
 {
   from {
-	margin-left: 100%; width: 300%
-	}
-	to
-	{
-		margin-left: 0%; width: 100%;
-	}
+  margin-left: 100%; width: 300%
+  }
+  to
+  {
+    margin-left: 0%; width: 100%;
+  }
 }
 
 #text {
-	animation-duration: 1.5s; animation-name: slidein;
+  animation-duration: 1.5s; animation-name: slidein;
 }
 
-#big_box { border-radius: 30px; border:3px solid; position: relative; overflow: hidden; text-align:center;}
-#box1 { border-radius: 30px; border:3px solid; position: relative; overflow: hidden; display: table;}
+#box1 { border-radius: 30px; border:3px solid; position: relative; overflow: hidden; display: table; height: 330px; float: left; width: 33%; padding: 20px; text-align:center;}
+#box2 { border-radius: 30px; border:3px solid; position: relative; overflow: hidden; display: table; height: 330px; float: left; width: 32%; padding: 20px; text-align:center;}
 .content {
   display: table-cell;
   vertical-align: middle;
@@ -90,29 +89,26 @@ button:hover {
   position: relative;
 }
 body {
-
   -webkit-animation: colorchange 60s infinite;
   animation: colorchange 60s infinite;
-	}
-	@-webkit-keyframes colorchange {
+}
+@-webkit-keyframes colorchange {
+  0%   {background: rgb(43, 219, 208);}
+  25%  {background: rgb(192, 33, 255);}
+  50%  {background: rgb(43, 219, 208);}
+  75%  {background: #DC7633;}
+	90%	 {background: rgb(41, 241, 141);}
+  100% {background: rgb(43, 219, 208);}
+}
 
-    0%   {background: rgb(43, 219, 208);}
-    25%  {background: rgb(192, 33, 255);}
-    50%  {background: rgb(43, 219, 208);}
-    75%  {background: #DC7633;}
-	  90%	 {background: rgb(41, 241, 141);}
-    100% {background: rgb(43, 219, 208);}
-	}
-
-
-	@keyframes colorchange {
-    0%  {background: rgb(43, 219, 208);}
-    25%  {background: rgb(192, 33, 255);}
-    50%  {background: rgb(43, 219, 208);}
-    75%  {background: #DC7633;}
-  	90%	 {background: rgb(41, 241, 141);}
-    100% {background: rgb(43, 219, 208);}
-  }
+@keyframes colorchange {
+  0%  {background: rgb(43, 219, 208);}
+  25%  {background: rgb(192, 33, 255);}
+  50%  {background: rgb(43, 219, 208);}
+  75%  {background: #DC7633;}
+  90%	 {background: rgb(41, 241, 141);}
+  100% {background: rgb(43, 219, 208);}
+}
 
 
 /* 하이퍼링크 밑줄 제거 */
@@ -123,12 +119,12 @@ a {
 @keyframes slidein
 { 
   from {
-	  margin-left: 100%; width: 300%
-	}
-	to
-	{
-		margin-left: 0%; width: 100%;
-	}
+    margin-left: 100%; width: 300%
+  }
+  to
+  {
+    margin-left: 0%; width: 100%;
+  }
 }
 
 * { font-family: 'Godo', 'Sans-serif'; }
@@ -141,4 +137,10 @@ a {
     font-family: 'Godo';
     font-weight: 700;
     src: url('fonts/GodoB.woff') format('woff');
+}
+
+/* 모바일 지원 */
+@media screen and (max-width: 1100px) {
+  #box1 { border-radius: 30px; border:3px solid; position: relative; overflow: hidden; display: table; height: 300px; width: 100%; padding: 20px; text-align:center;}
+  #box2 { border-radius: 30px; border:3px solid; position: relative; overflow: hidden; display: table; height: 300px; width: 100%; padding: 20px; text-align:center;}
 }
