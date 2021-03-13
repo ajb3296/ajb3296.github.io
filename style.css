@@ -132,11 +132,13 @@ a {
     font-family: 'Godo';
     font-weight: 500;
     src: url('fonts/GodoM.woff') format('woff');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Godo';
     font-weight: 700;
     src: url('fonts/GodoB.woff') format('woff');
+    font-display: swap;
 }
 
 /* 모바일 지원 */
