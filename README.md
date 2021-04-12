@@ -6,4 +6,4 @@
 * [type-js-html](https://github.com/kimka2013/type-js-html)
 
 ### 사이트
-https://newpremium.github.io
+https://ajb3296.github.io
