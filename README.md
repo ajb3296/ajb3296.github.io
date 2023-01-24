@@ -1,9 +1,7 @@
 # 포트폴리오
 
 ### 참고
-
-* [marie-kor-pj.github.io](https://github.com/marie-kor-pj/marie-kor-pj.github.io)
-* [type-js-html](https://github.com/kimka2013/type-js-html)
+https://github.com/cat-milk/Anime-Girls-Holding-Programming-Books
 
 ### 사이트
 https://ajb3296.github.io

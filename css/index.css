@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    background-color: #1F2023;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* 타이틀 백그라운드 이미지 */
+.top_box {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('https://github.com/cat-milk/Anime-Girls-Holding-Programming-Books/blob/master/Python/Emilia_Holding_Intro_to_Python.jpg?raw=true');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 서버 아이콘 */
+.top .icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+/* 제목 */
+.top .title {
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+    background-image: linear-gradient(to right bottom, #ff9a9e, #fad0c4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* 서브 타이틀 */
+.top .subtitle {
+    margin: 0;
+    font-weight: bold;
+    background-image: linear-gradient(to right bottom, #fad0c4, #ffd1ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.middle {
+    background-color: #1F2023;
+    color: white;
+
+    padding: 100px 10% 0;
+    margin: 100vh 0 0 0;
+
+    box-shadow: 0px -15px 20px 15px #1F2023;
+}
+
+/* info 상자 */
+.middle .info_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    opacity: 0;
+
+    margin: 0 0 150px 0;
+
+    transition: all 1.5s;
+}
+
+/* 프로젝트 이미지 */
+.middle .info_image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 300px;
+    height: 300px;
+
+    margin: 0 10px;
+}
+
+.cercle {
+    border-radius: 50%;
+}
+
+/* 프로젝트 텍스트 */
+.middle .info_text {
+    padding: 0 50px 0;
+    margin: 0 10px;
+}
+
+.middle .info_box li {
+    margin: 0 0 20px 0;
+}
+.middle .info_box ul {
+    margin: 0 0 -20px 0;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.link {
+    color: rgb(80, 217, 255);
+    text-decoration: none;
+
+    transition: all 0.5s;
+}
+.link:hover, .link:focus {
+    text-decoration: underline;
+    animation-duration: 3s;
+    animation-name: rainbowLink;
+    animation-iteration-count: infinite;
+}
+@keyframes rainbowLink {     
+    0% { color: rgb(80, 217, 255); }
+    12% { color: #ffabd8; }
+    24% { color: #ffdcc6; }
+    36% { color: #fff1ca; }
+    48% { color: #cbffc4; }
+    60% { color: #bcdaff; }
+    72% { color: #bcbcff; }
+    84% { color: #d7c5ff; }
+    100% { color: #faccff; }
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+.bottom a {
+    text-align: center;
+    color: white;
+    padding: 30px 10%;
+}
+
+@media screen and (max-width: 800px) {
+    .top_box {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('https://github.com/cat-milk/Anime-Girls-Holding-Programming-Books/blob/master/Python/Elaina_With_Effective_Python.png?raw=true');
+    }
+    .middle .info_box {
+        flex-direction: column;
+    }
+    .middle .reverse {
+        flex-direction: column-reverse!;
+    }
+
+    .middle .info_image {
+        margin: 0 0 30px 0;
+    }
+}
