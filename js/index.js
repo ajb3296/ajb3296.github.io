@@ -17,4 +17,7 @@ for (let i of text_elements) {
 document.addEventListener('scroll', function() {
     var currentScrollValue = document.body.scrollTop;
     document.getElementsByClassName('top')[0].style.top = (currentScrollValue * (-0.5)) + 'px';
-});
+    if ((currentScrollValue / 1000 + 0.4 <= 1) && (currentScrollValue / 1000 + 0.4 >= 0)) {
+        document.getElementsByClassName('top_box')[0].style.backgroundImage = "linear-gradient( rgba(32, 32, 35, " + (currentScrollValue / 1000 + 0.4) + "), rgba(32, 32, 35, " + (currentScrollValue / 1000 + 0.4) + ") ), url('https://github.com/cat-milk/Anime-Girls-Holding-Programming-Books/blob/master/Python/Emilia_Holding_Intro_to_Python.jpg?raw=true')";
+    }
+})
